@@ -18,6 +18,7 @@ dependencies = ["llama-index-core>=0.13.0,<0.15"]
 
 [project.urls]
 Homepage = "https://etfiq.com"
+Source = "https://github.com/etfiq/etfiq-connectors/tree/main/llama-index-tools-etfiq"
 Data = "https://etfiq.com/data/"
 
 [tool.hatch.build.targets.sdist]

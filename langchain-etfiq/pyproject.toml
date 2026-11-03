@@ -18,6 +18,7 @@ test = ["pytest", "langchain-tests>=0.3.0"]
 
 [project.urls]
 Homepage = "https://etfiq.com"
+Source = "https://github.com/etfiq/etfiq-connectors/tree/main/langchain-etfiq"
 Data = "https://etfiq.com/data/"
 
 [tool.hatch.build.targets.wheel]

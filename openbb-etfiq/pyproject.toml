@@ -18,6 +18,7 @@ test = ["pytest", "pytest-asyncio", "openbb-core[pandas]"]
 
 [project.urls]
 Homepage = "https://etfiq.com"
+Source = "https://github.com/etfiq/etfiq-connectors/tree/main/openbb-etfiq"
 Data = "https://etfiq.com/data/"
 
 [project.entry-points."openbb_provider_extension"]
