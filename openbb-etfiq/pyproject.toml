@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openbb-etfiq"
+version = "0.1.0"
+description = "OpenBB Platform provider for ETFIQ's free, keyless ETF data: search, info, holdings, fund flows and benchmark gap."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10,<3.14"
+authors = [{ name = "ETFIQ", email = "data@etfiq.com" }]
+keywords = ["openbb", "etf", "finance", "fund flows", "etfiq"]
+dependencies = ["openbb-core>=1.4.0"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio", "openbb-core[pandas]"]
+
+[project.urls]
+Homepage = "https://etfiq.com"
+Data = "https://etfiq.com/data/"
+
+[project.entry-points."openbb_provider_extension"]
+etfiq = "openbb_etfiq:etfiq_provider"
+
+[project.entry-points."openbb_core_extension"]
+etfiq = "openbb_etfiq.router:router"
+
+[tool.hatch.build.targets.wheel]
+packages = ["openbb_etfiq"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

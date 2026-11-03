@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[project]
+name = "llama-index-tools-etfiq"
+version = "0.1.0"
+description = "llama-index tools integration for ETFIQ's free, keyless ETF data"
+authors = [{ name = "ETFIQ", email = "data@etfiq.com" }]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["etf", "finance", "etfiq", "llama-index", "tools"]
+dependencies = ["llama-index-core>=0.13.0,<0.15"]
+
+[project.urls]
+Homepage = "https://etfiq.com"
+Data = "https://etfiq.com/data/"
+
+[tool.hatch.build.targets.sdist]
+include = ["llama_index/"]
+exclude = ["**/BUILD"]
+
+[tool.hatch.build.targets.wheel]
+include = ["llama_index/"]
+exclude = ["**/BUILD"]
