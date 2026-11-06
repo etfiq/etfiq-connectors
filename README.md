@@ -1,5 +1,9 @@
 # ETFIQ connectors
 
+askIQ: 99 of 100 ETF numbers right, 0 wrong. Best general AI with web search: 92 of 100. Oct 29, 2026. [AI accuracy test](https://etfiq.com/research/ai-accuracy/)
+
+**New here? Start with the [QUICKSTART](QUICKSTART.md):** copy-paste setup for Claude, Cursor, VS Code, ChatGPT and any MCP client, a notebook, and agent examples.
+
 Free, dated data on about 5,000 US-listed ETFs from [ETFIQ](https://etfiq.com), inside the tools you already use. No API key.
 
 | Package | For |
